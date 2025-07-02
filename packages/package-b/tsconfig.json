@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "lib",
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "lib"],
+  "references": [
+    { "path": "../package-a" }
+  ]
+}
